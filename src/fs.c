@@ -692,6 +692,9 @@ int file_write( char * name, int offset, int size, char * buf )
                 
                 if( newBlockNum == blockNum ) //IF: block number didn't change from old block numbers
                 {
+                    //Assign the new size of concatenated string to file
+                    inode[inodeNum].size = strlen( temp3 );
+                    
                     int k = 0;
                     for( k = 0; k < blockNum; k++ )
                     {
