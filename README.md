@@ -14,3 +14,11 @@ Implemented: create, cat, read, and write
 ## Part 2: Directory
 
 Implemented: mkdir, rmdir, and chdir
+
+## How to run:
+
+To run the program you can run the MAKEFILE by using the 'make' command. It will compile 7 files:
+disk.c, disk.h, fs.c, fs.h, fs_sim.c, fs_util.c, fs_util.h
+
+After compling simply use the command: ./fs_sim ANY_FILE_NAME 
+this will create a new 'disk' file and mount it and start the program.
